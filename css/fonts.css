@@ -1,0 +1,24 @@
+/*ESTO LO USAMOS PARA PONER UN TIPO DE LETRA QUE NO ESTE DISPONIBLE EN EL EDITOR*/
+/*@font-face{
+    font-family: jeda;
+    src: url("css/fonts/Montserrat-Regular.ttf") format("trutype");
+    font-weight: 400;
+}
+
+@font-face{
+    font-family: "jeda";
+    src: url("css/fonts/Montserrat-Black.ttf") format("trutype");
+    font-weight: 900;
+}*/
+
+@font-face{
+    font-family: "blogger";
+    src: url("fonts/BloggerSans.ttf") format("truetype");
+    font-weight: 1900;
+}
+
+@font-face{
+    font-family: "bloggerbold";
+    src: url("fonts/BloggerSansBold.ttf") format("truetype");
+    font-weight: 900;
+}
