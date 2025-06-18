@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="es  ">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros</title>
+    <link rel="icon" href="img/fuego.png"/>
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+
+<body class = "contenedor0">    
+    <header>
+        <!--<h1 class="contenedor1">NOSOTROS</h1>-->
+        <div class="contenedor1">
+            <div class="logo">
+                <a href="prueba.html"><img src="img\logo.jpeg" title="logo" alt="Logo de la página"></a>
+            </div>
+        
+
+            <div class="search-box">
+                <input type="text" placeholder="Buscar" class="search-input">
+                <button id="search-btn">
+                    <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar">
+                </button>
+            </div>
+        </div>
+
+
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
+                <li><a href="prueba.html">INICIO</a></li>
+                    <li class="submenu">
+                    <a href="#">PERSONAJES <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu-content">
+                        <li><a href="once.html"><i class="fa-solid fa-chevron-right"></i> Once</a></li>
+                        <li><a href="will.html"><i class="fa-solid fa-chevron-right"></i> Will</a></li>
+                        <li><a href="mike.html"><i class="fa-solid fa-chevron-right"></i> Mike</a></li>
+                        <li><a href="dustin.html"><i class="fa-solid fa-chevron-right"></i> Dustin</a></li>
+                        <li><a href="lucas.html"><i class="fa-solid fa-chevron-right"></i> Lucas</a></li>
+                        <li><a href="hoper.html"><i class="fa-solid fa-chevron-right"></i> Jim Hopper</a></li>
+                        <li><a href="demogorgon.html"><i class="fa-solid fa-chevron-right"></i> Demogorgon</a></li>
+
+                    </ul>
+                    </li> 
+                    <li class="submenu">
+                    <li><a href="temporadas.html">TEMPORADAS</a></li>
+                    <li><a href="nosotros.html">NOSOTROS</a></li>
+                    <li><a href="login.html" class="log">MI CUENTA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+                <!--<img src="img/Hojitas.jpg" title="Stranger Things" alt="Logo de Stranger Things"> -->
+            <div class="main-content-nosotros">
+                <div class="boxnosotros">
+                    <h2 class="">HISTORIA</h2>
+                        <p class="">A los 16 Años, Valeriano Rafael Monestina llega a Santo Domingo Rep. Dom., el día 3 de Diciembre en 1963 y empieza a trabajar en uno de los pocos supermercados de entonces.
+                        <br><br>
+                        En esos años esta industria empieza a desarrollarse y Rafael tiene la oportunidad de ser uno de los actores principales en estos cambios. Después de haber ocupado posiciones claves por más de 25 años en los supermercados más importantes del momento, decide empezar su propio negocio.
+                        <br><br>
+                        En 1979, en compañía de su esposa crea uno de los supermercados de mayor éxito del país. Iniciando con una estrategia agresiva de mercadeo no utilizada hasta entonces, que combinaba precios bajos, horario extendido y promociones constantes.
+                        <br><br>
+                        Para empezar la primera tienda, la familia Monestina toma control total de Bemosa, una importadora que tenían en sociedad con la familia Betances, y transforma lo que anteriormente era el almacén de Bemosa en el primer supermercado Bravo. Bravo cala en el gusto del consumidor y se convierte en un rotundo éxito excediendo todas las expectativas y convirtiéndolos en el supermercado con mayor venta por metro cuadrado del país.
+                    </p>
+                    </div>
+                
+                <div class="boxnosotros">
+                    <img src="img/yo.JPG" class="imagendeldiv">
+                    <u><h2 class="minombre">Jesús Castro</h2></u>
+                    <h4 class="profesion">Ing. Sistemas Computacionales</h4>
+                    <p>Nacido el 2 de marzo de 1996, estudiante de ingenieria en sistemas en UTESA, trabajo en Ochoa, soy esposo, padre, hijo y ademas una persona muy espiritual a la que le gusta todo lo concerniente a la naturaleza y los viajes.</p>
+                </div>
+
+                <div class="boxnosotros">
+                    <h2 class="">Mision</h2>
+                        <p>
+                            Superar las expectativas de nuestros clientes, ofreciendo una amplia gama de productos y servicios de calidad, con un personal altamente calificado, comprometido con la innovación y mejora continua de los procesos.
+                        </p>
+                        <h2>Vision</h2>
+                        <p>
+                            Visión: Ser líder nacional e internacional supliendo productos y servicios de construcción, ferretería y hogar.
+                        </p>
+                        <h2>Valores</h2>
+                        <ul class="valores">
+                            <li>Calidad</li>
+                            <li>Servicio</li>
+                            <li>Compromiso</li>
+                            <li>Respeto</li>
+                            <li>Flexibilidad</li>
+                        </ul>
+                    </div>
+            </div>
+            <br><br>
+
+                
+
+    <!-- Cuadro de busqueda -->
+    <script>
+        document.getElementById("search-btn").addEventListener("click", function() {
+            const input = document.querySelector(".search-input");
+            input.classList.toggle("active");
+
+            if (input.classList.contains("active")) {
+                input.focus();
+            }
+        });
+    </script>
+
+    <footer class="contenido-footer">
+        <div class="footer-container">
+        <div class="footer-column">
+            <h3 class="pie-columnas">Sobre nosotros</h3>
+            <p>A los 16 Años, Valeriano Rafael Monestina llega a Santo Domingo Rep. Dom., el día 3 de Diciembre en 1963 y empieza a trabajar en uno de los pocos supermercados de entonces.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="pie-columnas">Siguenos en nuestras redes</h3>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/aneudyj.deleon" target="_blank" class="social-link facebook"> <i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@aneudyjdeleon"  target="_blank" class="social-link youtube">  <i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/aneudyzj/"     target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <!--
+                <a href="https://linkedin.com"                           target="_blank" class="social-link pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=8297966507" target="_blank" class="social-link whatsapp"> <i class="fab fa-whatsapp"></i></a>
+                -->    
+            </div>
+
+            <!--
+            <ul>
+            <li><a href="#">Términos de servicio</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            </ul>
+            -->
+        </div>
+
+        <div class="footer-column">
+            <h3 class="pie-columnas">Contactanos</h3>
+            <ul>
+            <li><i class="fa-sharp fa-solid fa-phone-volume" style="font-size: 25px;"></i>&nbsp;(829)-796-6507</li>
+            <li><i class="fa-solid fa-envelope"              style="font-size: 25px;"></i>&nbsp;aneudyzdeleon@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"          style="font-size: 25px;"></i>&nbsp;Santiago, ensanche lib. calle 4 #228</li> 
+            </ul>
+        </div>
+        </div>
+        <h5>@Derechos reservados 2025</h5>
+</footer>
+    </body>
+</html>

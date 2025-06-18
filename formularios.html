@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eleven</title>
+    <link rel="icon" href="img/fuego.png">
+    <link rel="stylesheet" href="css/stylesform.css">
+    <link rel="stylesheet" href="css/fonts.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+
+<body class="contenedor0">
+
+    <div class="contenedor1">
+        <div class="logo">
+            <a href="prueba.html"><img src="img/logo.jpeg" title="logo" alt="Logo de la página"></a>
+        </div>
+        <div class="search-box">
+            <input type="text" placeholder="Buscar..." class="search-input">
+            <button id="search-btn">
+                <img src="https://cdn-icons-png.flaticon.com/512/622/622669.png" alt="Buscar">
+            </button>
+        </div>
+    </div>
+
+    <header>
+        <nav>
+            <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+            <ul class="menu">
+                <li><a href="prueba.html">INICIO</a></li>
+                <li class="submenu">
+                    <a href="#">PERSONAJES <i class="fa-solid fa-chevron-down"></i></a>
+                    <ul class="submenu-content">
+                        <li><a href="once.html"><i class="fa-solid fa-chevron-right"></i> Once</a></li>
+                        <li><a href="will.html"><i class="fa-solid fa-chevron-right"></i> Will</a></li>
+                        <li><a href="mike.html"><i class="fa-solid fa-chevron-right"></i> Mike</a></li>
+                        <li><a href="dustin.html"><i class="fa-solid fa-chevron-right"></i> Dustin</a></li>
+                        <li><a href="lucas.html"><i class="fa-solid fa-chevron-right"></i> Lucas</a></li>
+                        <li><a href="hoper.html"><i class="fa-solid fa-chevron-right"></i> Jim Hopper</a></li>
+                        <li><a href="demogorgon.html"><i class="fa-solid fa-chevron-right"></i> Demogorgon</a></li>
+                    </ul>
+                </li>
+                <li><a href="temporadas.html">TEMPORADAS</a></li>
+                <li><a href="nosotros.html">NOSOTROS</a></li>
+                <li><a href="login.html" class="log">MI CUENTA</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+
+<div class="main-content">
+    <form class="formulario">
+        <h2 class="completar_form">REGISTRATE</h2>
+            <fieldset>
+                <legend>Información personal</legend>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-user icono"></i>
+                    <input type="text" id="nombre" placeholder="" required minlength="3">
+                    <label>Nombre completo</label>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-lock icono"></i>
+                    <input type="password" id="password" placeholder="" required>
+                    <label>Contraseña</label>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-calendar-days iconof"></i>
+                    <span class="date-label">Fecha de nacimiento</span>    
+                    <input type="date" required name="Fecha">
+                </div>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-venus-mars"></i>
+                    <span class="date-label">Sexo</span> 
+                    <select name="type-of-user" required>   
+                        <option value="">Seleccione</option>
+                        <option value="gen1">Masculino</option>
+                        <option value="gen2">Femenino</option>
+                    </select>
+                </div>
+            </fieldset>
+
+            <fieldset>
+                <legend>Información de contacto</legend>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-envelope icono"></i>
+                    <input type="email" id="correo" placeholder="" required>
+                    <label for="correo">Correo electrónico</label>
+                </div>
+
+                <div class="input-container">
+                    <i class="fa-solid fa-phone icono"></i>
+                    <input type="text" id="telefono" placeholder="" required minlength="3" name="telefono" maxlength="10" required oninput="this.value = this.value.replace(/[^0-9]/g, '')">
+                    <label>Teléfono</label>
+                </div>
+            </fieldset>
+
+            <!--
+            <div class="input-container">
+                <i class="fa-solid fa-arrow-up-from-bracket icono"></i>    
+                <input type="file" required name="Archivo">
+            </div>
+            -->
+            
+            <!--
+            <div class="input-container">
+                <textarea id="textarea" placeholder=" "></textarea>
+                <label for="textarea">Escribe algo...</label>
+            </div>
+            -->
+
+            <div class="checkbox-container">
+                <label class="especial">
+                    <input type="checkbox" class="checkbox" required> Acepto los <a href="terminos.html" target="_blank">términos y condiciones</a>
+                </label>
+            </div>
+
+            <br><br>
+
+            <center>
+                <button class="formulario_submit" type="submit">ENVIAR</button>
+            </center>
+            <div class="acceder-link">
+                <p>¿Tienes una cuenta? <a href="login.html" class="acceder">ACCEDE</a></p>
+            </div>
+</form>
+    <br><br>
+    </div>
+
+    <!--
+    <center>
+        <video controls autoplay muted src="video.mp4">
+            Tu navegador no soporta video.
+        </video>
+    </center>  
+    -->
+    
+    <footer class="contenido-footer">
+        <div class="footer-container">
+        <div class="footer-column">
+            <h3 class="pie-columnas">Sobre nosotros</h3>
+            <br>
+            <p>A los 16 Años, Valeriano Rafael Monestina llega a Santo Domingo Rep. Dom., el día 3 de Diciembre en 1963 y empieza a trabajar en uno de los pocos supermercados de entonces.</p>
+        </div>
+
+        <div class="footer-column">
+            <h3 class="pie-columnas">Siguenos en nuestras redes</h3>
+            <br>
+                <div class="social-icons">
+                <a href="https://www.facebook.com/aneudyj.deleon" target="_blank" class="social-link facebook"> <i class="fab fa-facebook"></i></a>
+                <a href="https://www.youtube.com/@aneudyjdeleon"  target="_blank" class="social-link youtube">  <i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/aneudyzj/"     target="_blank" class="social-link instagram"><i class="fab fa-instagram"></i></a>
+                <!--
+                <a href="https://linkedin.com"                           target="_blank" class="social-link pinterest"><i class="fa-brands fa-pinterest"></i></a>
+                <a href="https://api.whatsapp.com/send?phone=8297966507" target="_blank" class="social-link whatsapp"> <i class="fab fa-whatsapp"></i></a>
+                -->    
+            </div>
+
+            <!--
+            <ul>
+            <li><a href="#">Términos de servicio</a></li>
+            <li><a href="#">Política de privacidad</a></li>
+            </ul>
+            -->
+        </div>
+
+        <div class="footer-column">
+            <h3 class="pie-columnas">Contactanos</h3>
+            <br>
+            <ul>
+            <li><i class="fa-sharp fa-solid fa-phone-volume" style="font-size: 25px;"></i>&nbsp;(829)-796-6507</li>
+            <li><i class="fa-solid fa-envelope"              style="font-size: 25px;"></i>&nbsp;aneudyzdeleon@gmail.com</li>
+            <li><i class="fa-solid fa-location-dot"          style="font-size: 25px;"></i>&nbsp;Santiago, ensanche lib. calle 4 #228</li> 
+            </ul>
+        </div>
+        </div>
+        <h5>@Derechos reservados 2025</h5>
+</footer>

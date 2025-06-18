@@ -1,0 +1,42 @@
+<div class="input-container">
+                            <label>E-mail
+                                <input type="email" required placeholder="ejemplo@gmail.com">
+                            </label>
+                        </div>
+
+                        <div class="input-container">
+                            <label>Contraseña
+                                <input type="password" required placeholder="*****">
+                            </label>
+                        </div>
+			
+			<div class="input-container">
+                            <label>Fecha
+                                <input type="date" required name="Fecha">
+                            </label>
+                        </div>
+                        
+                        <div class="input-container">
+                                <select name="type-of-user">
+                                    <option>Género</option>
+                                    <option value="gen1">Masculino</option>
+                                    <option value="gen2">Femenino</option>
+                                </select>
+                        </div>
+
+                        <div class="input-container">
+                            <label>Subir    
+                                <input type="file" required  name="Archivo">
+                            </label>
+                        </div>
+
+                        <div class="input-container">
+                            <label>Mensaje  
+                                <textarea rows="8" placeholder="Deja tu mensaje..."></textarea>
+                            </label> 
+                        </div>
+
+
+                        <center>
+                        <button class="formulario_submit" type="submit">Enviar</button>
+                        </center>
